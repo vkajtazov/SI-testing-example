@@ -23,11 +23,11 @@ public class Operations {
     public int [] sum (int [] array1, int [] array2) throws IllegalArgumentException,ArrayIndexOutOfBoundsException{
         if (array1 ==null || array2==null) throw new IllegalArgumentException();
         if(array1.length!= array2.length) throw new ArrayIndexOutOfBoundsException();
-        
+        int [] result = new int [array1.length];
         for(int i=0;i<array1.length;i++){
-            array1[i] +=array2[i];
+            result[i] = array1[i] +array2[i];
         }
-        return array1;
+        return result;
     }
     
     public boolean isOkArray (int [] array){

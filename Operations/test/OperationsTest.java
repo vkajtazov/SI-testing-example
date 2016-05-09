@@ -75,14 +75,18 @@ public class OperationsTest {
     public void  suma() {
         int [] a = new int [3];
         int [] b = new int [3];
+        int [] c = new int [3];
         a[0]=1;
         a[1]=1;
         a[2]=1;
         b[0]=1;
         b[1]=1;
         b[2]=1;
+        c[0]=2;
+        c[1]=2;
+        c[2]=2;
         
-        assertArrayEquals(a, o.sum(a, b));
+        assertArrayEquals(c, o.sum(a, b));
         
         
     }
