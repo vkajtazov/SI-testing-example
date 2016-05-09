@@ -81,7 +81,9 @@ public class OperationsTest {
         b[0]=1;
         b[1]=1;
         b[2]=1;
-        assertArrayEquals(b, a);
+        
+        assertArrayEquals(a, o.sum(a, b));
+        
         
     }
      @Test 
